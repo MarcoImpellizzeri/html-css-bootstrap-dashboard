@@ -1,3 +1,15 @@
 :root {
-    
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-magin-ul {
+    margin-bottom: 0;
+}
+
+.custom-widht {
+    max-width: 50px;
 }
