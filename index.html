@@ -17,34 +17,34 @@
 
 <body>
 
-    <div>
-
+    <header>
         <!-- nav-bar con il logo una barra di ricerca, una lista con link non funzionanti ed un link con tendina funzionante -->
         <nav class="nav-bar">
-            <div class="container-fluid d-flex align-items-center">
-                <div class="p-3">
+            <div class="d-flex align-items-center">
+                <div class="px-3">
                     <a class="navbar-brand" href="#">
-                        <img class="d-none d-md-block" src="img/logo.svg" alt="logo boolean">
+                        <img class="d-none d-lg-block" src="img/logo.svg" alt="logo boolean">
 
-                        <img class="d-block custom-widht-logo-sm d-md-none img-fluid" src="img/mobile-logo.png"
-                            alt="logo boolean mobile">
+                        <div><img class="d-block custom-widht-logo-sm d-lg-none" src="img/mobile-logo.png" alt="logo boolean mobile"></div>
                     </a>
                 </div>
 
                 <form class="d-flex flex-grow-1" role="search">
-                    <button type="button" class="btn border border-end-0 rounded-end-0 my-bg-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input class="form-control me-2 border-start-0 rounded-start-0 shadow-none my-bg-search" type="search" placeholder="Prova a cercare: Lezioni di Larave" aria-label="Search">
+                    <button type="button" class="btn border border-end-0 rounded-end-0 my-bg-search"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <input class="form-control me-2 border-start-0 rounded-start-0 shadow-none my-bg-search"
+                        type="search" placeholder="Prova a cercare: Lezioni di Larave" aria-label="Search">
                 </form>
 
                 <div>
-                    <ul class="d-none d-lg-flex list-unstyled my-margin-ul align-items-center">
+                    <ul class="d-none d-lg-flex list-unstyled my-margin-ul align-items-center my-margin-ul">
                         <li class="m-3"><a href="#"></a><i class="fa-solid fa-list-ul"></i></li>
                         <li class="m-3"><a href="#"></a><i class="fa-solid fa-circle-question"></i></li>
                         <li class="m-3"><a href="#"></a><i class="fa-solid fa-ellipsis-vertical"></i></li>
                     </ul>
                 </div>
 
-                <div class="dropdown p-2 ms-2">
+                <div class="dropdown p-3 ms-2">
                     <a href="#" class="text-warning" type="link" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-bell"></i>
                     </a>
@@ -57,29 +57,34 @@
                 </div>
             </div>
         </nav>
+    </header>
 
-        <main>
+    <main>
+        <!-- aside nav-bar  -->
+        <div class="sidebar px-lg-3 py-4 text-white">
+            <ul class="nav flex-column nav-hover">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-house"></i> <span class="d-none d-lg-inline-block">Home</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-chart-simple"></i> <span class="d-none d-lg-inline-block">Stats</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-signal"></i> <span class="d-none d-lg-inline-block">Signals</span></a></li>
+            </ul>
 
-            <!-- aside nav-bar -->
-            <aside class="bg-primary custom-widht-aside custom-hight-aside">
-                <div class="d-flex flex-column justify-content-between">
-                    <ul class="list-unstyled my-margin-ul">
-                        <li class="px-3 py-2 text-center"><a class="text-light" href="#"><i class="fa-solid fa-house"></i></a></li>
-                        <li class="px-3 py-2 text-center"><a class="text-light" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
-                        <li class="px-3 py-2 text-center"><a class="text-light" href="#"><i class="fa-solid fa-signal"></i></a></li>
-                    </ul>
-
-                    <a href="#"></a>
+            <ul class="nav flex-column nav-hover">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-gear"></i> <span class="d-none d-lg-inline-block">Admin</span></a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <section class="bg-primary">
+                <div>
+                    <button type="button" class="btn btn-outline-light">+</button>
                 </div>
-            </aside>
+                <div></div>
+                <div></div>
+            </section>
 
-            <div class="container">
-                <section></section>
-
-                <section></section>
-            </div>
-        </main>
-    </div>
+            <div class="container-row"></div>
+        </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
