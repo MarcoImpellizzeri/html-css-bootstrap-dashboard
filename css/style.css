@@ -8,14 +8,14 @@ body {
 }
 
 main,
-.content,
+.content-main-nav,
 .cont-row {
     flex-grow: 1;
     overflow: auto;
     display: flex;
 }
 
-.content {
+.content-main-nav {
     flex-direction: column
 }
 
@@ -63,6 +63,10 @@ header {
     background-color: rgb(219, 218, 218);
 }
 
+.my-badge-bg {
+    background-color: #165BBA!important;
+}
+
 @media screen and (min-width:992px) {
     .sidebar {
         max-width: 200px;
@@ -76,3 +80,4 @@ header {
         margin-right: .5rem;
     }
 }
+
