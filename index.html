@@ -17,7 +17,7 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div>
 
         <!-- nav-bar con il logo una barra di ricerca, una lista con link non funzionanti ed un link con tendina funzionante -->
         <nav class="nav-bar">
@@ -26,16 +26,18 @@
                     <a class="navbar-brand" href="#">
                         <img class="d-none d-md-block" src="img/logo.svg" alt="logo boolean">
 
-                        <img class="d-block custom-widht d-md-none img-fluid" src="img/mobile-logo.png" alt="logo boolean mobile">
+                        <img class="d-block custom-widht-logo-sm d-md-none img-fluid" src="img/mobile-logo.png"
+                            alt="logo boolean mobile">
                     </a>
                 </div>
 
                 <form class="d-flex flex-grow-1" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn border border-end-0 rounded-end-0 my-bg-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input class="form-control me-2 border-start-0 rounded-start-0 shadow-none my-bg-search" type="search" placeholder="Prova a cercare: Lezioni di Larave" aria-label="Search">
                 </form>
 
                 <div>
-                    <ul class="d-none d-lg-flex list-unstyled my-magin-ul align-items-center">
+                    <ul class="d-none d-lg-flex list-unstyled my-margin-ul align-items-center">
                         <li class="m-3"><a href="#"></a><i class="fa-solid fa-list-ul"></i></li>
                         <li class="m-3"><a href="#"></a><i class="fa-solid fa-circle-question"></i></li>
                         <li class="m-3"><a href="#"></a><i class="fa-solid fa-ellipsis-vertical"></i></li>
@@ -57,7 +59,19 @@
         </nav>
 
         <main>
-            <aside></aside>
+
+            <!-- aside nav-bar -->
+            <aside class="bg-primary custom-widht-aside custom-hight-aside">
+                <div class="d-flex flex-column justify-content-between">
+                    <ul class="list-unstyled my-margin-ul">
+                        <li class="px-3 py-2 text-center"><a class="text-light" href="#"><i class="fa-solid fa-house"></i></a></li>
+                        <li class="px-3 py-2 text-center"><a class="text-light" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                        <li class="px-3 py-2 text-center"><a class="text-light" href="#"><i class="fa-solid fa-signal"></i></a></li>
+                    </ul>
+
+                    <a href="#"></a>
+                </div>
+            </aside>
 
             <div class="container">
                 <section></section>
