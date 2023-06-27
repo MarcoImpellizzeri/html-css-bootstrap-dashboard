@@ -64,27 +64,31 @@
         <!-- aside nav-bar  -->
         <div class="sidebar px-lg-3 py-4 text-white">
             <ul class="nav flex-column nav-hover">
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-house"></i> <span
-                            class="d-none d-lg-inline-block">Home</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-chart-simple"></i> <span
+                <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#"><i
+                            class="fa-solid fa-house"></i> <span class="d-none d-lg-inline-block">Home</span></a></li>
+                <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#"><i
+                            class="fa-solid fa-chart-simple"></i> <span
                             class="d-none d-lg-inline-block">Stats</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-signal"></i> <span
-                            class="d-none d-lg-inline-block">Signals</span></a></li>
+                <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#"><i
+                            class="fa-solid fa-signal"></i> <span class="d-none d-lg-inline-block">Signals</span></a>
+                </li>
             </ul>
 
             <ul class="nav flex-column nav-hover">
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-gear"></i> <span
-                            class="d-none d-lg-inline-block">Admin</span></a></li>
+                <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#"><i
+                            class="fa-solid fa-gear"></i> <span class="d-none d-lg-inline-block">Admin</span></a></li>
             </ul>
         </div>
 
 
         <!-- nav-bar blu del main content -->
         <div class="content-main-nav">
-            <div class="row p-3  bg-primary flex-column flex-md-row text-white d-md-flex">
+            <div class="row p-3 bg-primary flex-column flex-md-row text-white d-md-flex">
                 <div class="pb-2 col col-md-3 order-md-3">
                     <span class="me-2">Nuovo Studente</span>
-                    <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                            class="fa-solid fa-plus"></i></button>
                 </div>
 
                 <div class="pb-2 col col-md-6 order-md-1">
@@ -142,7 +146,7 @@
                                         <td class="d-none d-md-table-cell">20%</td>
                                         <td><span class="badge text-bg-success">Done</span></td>
                                         <td>
-                                            <button type="button" class="btn btn-outline-secondary me-2"><i
+                                            <button type="button" class="btn btn-outline-secondary me-2 "><i
                                                     class="fa-solid fa-pencil"></i></button>
                                             <button type="button" class="btn btn-outline-secondary"><i
                                                     class="fa-solid fa-trash"></i></button>
@@ -380,7 +384,7 @@
 
                     <!-- card grafico -->
                     <div class="card p-3">
-                        <div class="border">
+                        <div class="border rounded">
                             <img src="img/stats.jpeg" class="card-img-top" alt="img stats">
                             <div class="card-body">
                                 <h5 class="card-title">Utenti attivi</h5>
@@ -400,6 +404,130 @@
             </div>
         </div>
     </main>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end my-offcanvas-width" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Iinserisci un nuovo studente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="name" class="form-control" id="name" aria-describedby="nameHelp">
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="surname" class="form-label">Cognome</label>
+                        <input type="surname" class="form-control" id="surname" aria-describedby="surnameHelp">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <form class="d-flex">
+                            <button type="button" class="btn my-btn-bg-mail border border-end-0 rounded-end-0"><i
+                                    class="fa-solid fa-at"></i></button>
+                            <input type="email" class="form-control  rounded-start-0" id="email"
+                                aria-describedby="emailHelp">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="pasword" class="form-label">pasword</label>
+                        <input type="pasword" class="form-control" id="pasword" aria-describedby="pasword">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Indirizzo <br> Email</label>
+                        <form class="d-flex">
+                            <button type="button" class="btn my-btn-bg-mail border border-end-0 rounded-end-0"><i
+                                    class="fa-solid fa-at"></i></button>
+                            <input type="email" class="form-control  rounded-start-0" id="email"
+                                aria-describedby="emailHelp">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="pasword" class="form-label"><br>pasword</label>
+                        <input type="pasword" class="form-control" id="pasword" aria-describedby="pasword">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="addres" class="form-label">Indirizzo</label>
+                            <input type="addres" class="form-control" id="addres" aria-describedby="addresHelp">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="city" class="form-label">Citta`</label>
+                            <input type="city" class="form-control" id="city" aria-describedby="cityHelp">
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <label class="form-label">Scegli</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Scegli...</option>
+                            <option value="1">margin</option>
+                            <option value="2">border</option>
+                            <option value="3">padding</option>
+                        </select>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label for="cap" class="form-label">CAP</label>
+                            <input type="cap" class="form-control" id="cap" aria-describedby="capHelp">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Foto</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-check my-margin-checkbox">
+                    <input class="form-check-input" type="checkbox" value="" id="seleziona">
+                    <label class="form-check-label" for="seleziona">
+                        Seleziona per proseguire
+                    </label>
+                </div>
+
+                <div class="d-flex pt-3">
+                    <button class="btn btn-primary me-2">Salva</button>
+                    <button class="btn btn-warning">Svuota</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

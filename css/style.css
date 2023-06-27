@@ -39,6 +39,7 @@ header {
     background-image: url(../img/sidebar-bg.png);
     height: calc(100vh - 56px);
     background-color: #051E34;
+    max-width: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -72,9 +73,22 @@ td img {
     margin-right: 5px;
 }
 
+.my-offcanvas-width {
+    --bs-offcanvas-width: 800px;
+}
+
+.my-btn-bg-mail {
+    background-color: #E9ECEF;
+}
+
+.my-margin-checkbox {
+    margin-top: 1rem;
+    margin-left: .7rem;
+}
+
 @media screen and (min-width:992px) {
     .sidebar {
-        max-width: 200px;
+        max-width: 250px;
     }
 
     .sidebar a i {
