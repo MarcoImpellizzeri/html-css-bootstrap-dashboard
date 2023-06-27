@@ -39,7 +39,6 @@ header {
     background-image: url(../img/sidebar-bg.png);
     height: calc(100vh - 56px);
     background-color: #051E34;
-    max-width: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,6 +64,12 @@ header {
 
 .my-badge-bg {
     background-color: #165BBA!important;
+}
+
+td img {
+    max-width: 32px;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 
 @media screen and (min-width:992px) {
